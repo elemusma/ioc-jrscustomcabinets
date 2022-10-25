@@ -1,5 +1,5 @@
 <?php
-wp_enqueue_style('services', get_theme_file_uri('/css/sections/services.css'));
+// wp_enqueue_style('services', get_theme_file_uri('/css/sections/services.css'));
 $relationship = get_field('pages');
 
 if( $relationship ):

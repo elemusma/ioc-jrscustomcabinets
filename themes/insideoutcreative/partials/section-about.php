@@ -16,8 +16,8 @@ echo '<div class="row justify-content-center position-relative pt-4 pb-4">';
 // echo '<div class="position-absolute bg-accent-secondary" style="height:90%;width:20px;opacity:.85;top:5%;right:-20px;"></div>';
 
 if(have_rows('tabs')):
-echo '<div class="col-md-3 d-flex flex-wrap align-items-center">';
-echo '<div class="w-100">';
+echo '<div class="col-md-3 d-flex flex-wrap">';
+echo '<div class="w-100 pt-md-5">';
 $contentCounter = 0;
 while(have_rows('tabs')): the_row();
 $contentCounter++;

@@ -9,8 +9,9 @@ wp_enqueue_style('contact', get_theme_file_uri('/css/sections/contact.css'));
 wp_enqueue_style('img', get_theme_file_uri('/css/elements/img.css'));
 wp_enqueue_style('bootstrap', get_theme_file_uri('/css/bootstrap.min.css'));
 
-if(is_front_page()){
+if(is_front_page() || is_page_template('templates/services.php')){
 	wp_enqueue_style('home', get_theme_file_uri('/css/sections/home.css'));
+	wp_enqueue_style('services', get_theme_file_uri('/css/sections/services.css'));
 }
 if(is_page_template('templates/about.php')){
 	wp_enqueue_style('about-custom', get_theme_file_uri('/css/sections/about.css'));

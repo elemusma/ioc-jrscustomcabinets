@@ -121,7 +121,7 @@ $galleryFooter = get_field('footer_gallery','options');
 echo '<section class="hero position-relative">';
 $globalPlaceholderImg = get_field('global_placeholder_image','options');
 
-// if(!is_front_page()):
+if(!is_front_page()):
 if(is_page()){
 if(has_post_thumbnail()){
 the_post_thumbnail('full', array('class' => 'w-100 h-100 bg-img position-absolute'));
@@ -131,11 +131,31 @@ echo wp_get_attachment_image($globalPlaceholderImg['id'],'full','',['class'=>'w-
 } else {
 echo wp_get_attachment_image($globalPlaceholderImg['id'],'full','',['class'=>'w-100 h-100 bg-img position-absolute']);
 }
-// endif;
+endif;
+
+
 
 
 if(is_front_page()) {
-echo '<div class="position-relative text-center d-flex justify-content-center align-items-end" style="height:97vh;">';
+
+if(have_rows('header_carousel')): while(have_rows('header_carousel')): the_row();
+$gallery = get_sub_field('carousel');
+if( $gallery ): 
+echo '<div class="position-absolute header-carousel owl-carousel owl-theme w-100 h-100" style="top:0;left:0;">';
+foreach( $gallery as $image ):
+// echo '<div class="col-lg-3 col-md-4 col-6 col col-portfolio mt-3 mb-3 overflow-h">';
+// echo '<div class="position-relative">';
+// echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set">';
+echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100 h-100 img-portfolio','style'=>'object-fit:cover;'] );
+// echo '</a>';
+// echo '</div>';
+// echo '</div>';
+endforeach; 
+echo '</div>';
+endif;
+endwhile; endif;
+
+echo '<div class="position-relative text-center d-flex justify-content-center align-items-end z-1" style="height:97vh;">';
 echo '<div class="position-absolute w-100 h-100" style="background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,0) 75%, rgba(255,255,255,1) 95%);top:0;left:0;"></div>';
 
