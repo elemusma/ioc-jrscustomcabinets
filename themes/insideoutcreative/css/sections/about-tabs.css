@@ -1,0 +1,55 @@
+/* start of intro */
+.links-intro-active .links-intro-plus-sign {
+    opacity: 0;
+}
+
+.links-intro-plus-sign {
+    transition: all .25s ease-in-out;
+}
+
+.links-intro {
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+    -ms-clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+    -moz-clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+    -o-clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 0 0);
+    background: var(--accent-primary) !important;
+}
+
+.links-intro:hover {
+    background: var(--accent-secondary) !important;
+    color: white !important;
+}
+
+/* .a-intro-links {
+    box-shadow: inset 0px 0px 3px #f1f1f1;
+    border: 1px ridge whitesmoke;
+    border-style: ridge;
+    transition: all .25s ease-in-out;
+    text-decoration: none !important;
+} */
+
+.a-intro-links:hover {
+    background: var(--accent-primary) !important;
+    color: var(--accent-secondary) !important;
+}
+
+.links-intro-active {
+    pointer-events: none;
+    background: var(--accent-primary) !important;
+    /* color: white !important; */
+}
+
+.tab-content-active {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: all !important;
+    opacity: 1 !important;
+}
+
+/* end of intro */

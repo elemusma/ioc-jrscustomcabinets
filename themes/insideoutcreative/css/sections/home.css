@@ -1,0 +1,80 @@
+/* start of hero */
+@media only screen and (max-width:767px) {
+    h1 {
+        font-size: 50px !important;
+    }
+}
+
+/* end of hero */
+
+/* start of bars */
+.col-full-background,
+.img-full-background {
+    opacity: 1;
+}
+
+.col-full-background-overlay {
+    transition: all 0s ease-in-out;
+}
+
+.active-inner-col .img-full-background,
+.active-inner-col .col-full-background-overlay {
+    opacity: 0 !important;
+}
+
+
+.active-inner-col .col-full-background.active .img-full-background {
+    opacity: 1 !important;
+    transform: scale(1.1);
+    transition: all 10s ease-out;
+    transition-delay: 25ms;
+    transition-property: transform;
+}
+
+.active-inner-col .col-full-background.active .col-full-background-overlay {
+    opacity: .35 !important;
+    transition: all 1s ease-in;
+}
+
+.active-inner-col .col-full-background.active .col-full-background-overlay {
+    transition: all 0s ease-in-out;
+}
+
+.active-inner-col .col-full-background.active {
+    z-index: 1 !important;
+    overflow: visible;
+}
+
+.col-full-background:last-child .col-full-background-borders {
+    border-right: 1px solid white;
+}
+
+
+/* start of bars mobile */
+@media only screen and (max-width:992px) {
+    .img-full-background {
+        left: 0 !important;
+        width: 100%;
+        /* object-position: right; */
+    }
+
+    .section-bars .row .col-md-6:last-child {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* end of bars mobile */
+
+/* end of bars */
+/* .col-full-background:first-child,
+.col-full-background.active,
+.active-inner-col .col-full-background.active~.col-full-background {
+    border-left: 1px solid white;
+} */
+
+/* .active-inner-col .col-full-background.active~.col-full-background {
+    border-right: 0;
+} */
