@@ -3,7 +3,7 @@
 get_header();
 
 // start of intro
-echo get_template_part('partials/section-about');
+// echo get_template_part('partials/section-about');
 // end of intro
 
 

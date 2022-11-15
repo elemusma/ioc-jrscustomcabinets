@@ -31,7 +31,11 @@ wp_head(); ?>
 <?php 
 $logo = get_field('logo','options'); 
 if($logo){
-echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 nav-logo','style'=>'height:62px;max-width:350px;object-fit:contain;transition:all 2s ease-in-out;object-fit:contain;object-position:left;']); 
+echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 nav-logo','style'=>'height:62px;max-width:350px;object-fit:contain;transition:all 2s ease-in-out;object-fit:contain;object-position:left;opacity:0;']); 
+}
+$logoSecondary = get_field('logo_secondary','options'); 
+if($logoSecondary){
+echo wp_get_attachment_image($logoSecondary['id'],'full',"",['class'=>'position-absolute w-auto nav-logo-secondary','style'=>'max-width:350px;top:0;left:15px;height:62px;object-fit:contain;transition:all 2s ease-in-out;']);
 }
 ?>
 </a>
@@ -146,7 +150,9 @@ foreach( $gallery as $image ):
 // echo '<div class="col-lg-3 col-md-4 col-6 col col-portfolio mt-3 mb-3 overflow-h">';
 // echo '<div class="position-relative">';
 // echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set">';
+echo '<div>';
 echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100 h-100 img-portfolio','style'=>'object-fit:cover;'] );
+echo '</div>';
 // echo '</a>';
 // echo '</div>';
 // echo '</div>';

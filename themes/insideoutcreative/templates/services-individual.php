@@ -22,7 +22,9 @@ echo '<div class="container">';
 echo '<div class="row justify-content-center align-items-center">';
 echo '<div class="col-lg-2 col-md-5 col-4 mb-md-0 mb-4">';
 
+if($image):
 echo wp_get_attachment_image($image['id'],'full','',['class'=>'w-100 h-auto']);
+endif;
 
 echo '</div>';
 
@@ -44,6 +46,24 @@ echo '</div>';
 echo '</section>';
 endwhile;
 endif;
+
+if(get_the_content()){
+
+    echo '<section class="pt-5 pb-5">';
+    echo '<div class="container">';
+    echo '<div class="row">';
+    echo '<div class="col-md-12">';
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+    the_content();
+    endwhile; else:
+    echo '<p>Sorry, no posts matched your criteria.</p>';
+    endif;
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</section>';
+    
+    }
 
 // start of repeated section
 if(have_rows('content_section')):
@@ -126,7 +146,7 @@ endif; // end of if statement for content or repeaters. The if statement wasn't 
 endwhile; endif;
 // end of locations
 
-echo '<section class="position-relative" style="padding:100px 0;">';
+echo '<section class="position-relative bg-light pt-5 pb-5" style="">';
 echo '<div class="container">';
 echo '<div class="row justify-content-center">';
 echo '<div class="col-md-9 text-center">';

@@ -31,9 +31,10 @@ foreach( $relationship as $post ):
 setup_postdata($post);
 $counter++;
 
-//echo '<a href="' . get_the_permalink() . '" class="col-md-4 text-center pl-1 pr-1 pt-2 col-services">';
-echo '<span class="col-md-4 text-center pl-1 pr-1 pt-2 col-services">';
-echo '<div class="position-relative overflow-h" style="padding-top:75px;padding-bottom:75px;">';
+echo '<a href="' . get_the_permalink() . '" class="col-lg col-md-6 text-center pl-1 pr-1 pt-2 col-services">';
+// echo '<span class="col-lg col-md-6 text-center pl-1 pr-1 pt-2 col-services" style="">';
+echo '<div class="position-relative overflow-h h-100 d-flex align-items-center justify-content-center" style="padding-top:75px;padding-bottom:75px;">';
+echo '<div>';
 the_post_thumbnail('full',array('class'=>'w-100 h-100 position-absolute','style'=>'top:0;left:0;object-fit:cover;'));
 echo '<div class="position-absolute w-100 h-100 bg-black col-services-overlay" style="top:0;left:0;opacity:.45;"></div>';
 
@@ -43,8 +44,9 @@ echo '<h6 class="position-relative mb-0 text-white pt-2 pb-2">' . get_the_title(
 echo '</div>';
 
 echo '</div>';
-//echo '</a>';
-echo '</span>';
+
+echo '</div>';
+echo '</a>';
 
 // echo '<div class="col-md-4 text-white mb-4">';
 // echo '<div class="position-relative pt-4 pr-4 pl-4 h-100 d-flex align-items-end col-services" style="background:rgba(0,0,0,.45);">';

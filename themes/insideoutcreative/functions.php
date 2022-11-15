@@ -12,6 +12,7 @@ wp_enqueue_style('bootstrap', get_theme_file_uri('/css/bootstrap.min.css'));
 if(is_front_page() || is_page_template('templates/services.php')){
 	wp_enqueue_style('home', get_theme_file_uri('/css/sections/home.css'));
 	wp_enqueue_style('services', get_theme_file_uri('/css/sections/services.css'));
+	wp_enqueue_style('services-index', get_theme_file_uri('/css/sections/services-index.css'));
 }
 if(is_page_template('templates/about.php')){
 	wp_enqueue_style('about-custom', get_theme_file_uri('/css/sections/about.css'));
@@ -144,7 +145,7 @@ function smartwp_remove_wp_block_library_css(){
 		wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
 	}
 } 
-add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
+// add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 
 // add_filter('show_admin_bar', '__return_false');
 

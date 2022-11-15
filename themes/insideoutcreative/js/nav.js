@@ -6,11 +6,15 @@ let navMenuClose = document.querySelector('#navMenuClose');
 let header = document.querySelector('header');
 let hero = document.querySelector('.hero');
 let navLogo = document.querySelector('.nav-logo');
+let navLogoSecondary = document.querySelector('.nav-logo-secondary');
 // let blankSpace = document.querySelector('.blank-space');
 
 // console.log(hero.offsetHeight);
 
 window.addEventListener("scroll", parallaxEffect);
+
+navLogo.style.opacity = "0";
+navLogoSecondary.style.opacity = "1";
 
 function parallaxEffect() {
 
@@ -18,11 +22,17 @@ function parallaxEffect() {
         header.classList.remove('bg-white');
         header.classList.remove('box-shadow');
         navLogo.style.height = "62px";
+        navLogoSecondary.style.height = "62px";
+        navLogo.style.opacity = "0";
+        navLogoSecondary.style.opacity = "1";
     }
     if (window.scrollY > (hero.offsetHeight - (hero.offsetHeight / 2))) {
         header.classList.add('bg-white');
         header.classList.add('box-shadow');
         navLogo.style.height = "25px";
+        navLogo.style.opacity = "1";
+        navLogoSecondary.style.height = "25px";
+        navLogoSecondary.style.opacity = "0";
     }
 
     // blankSpace.style.height = header.offsetHeight + "px";
