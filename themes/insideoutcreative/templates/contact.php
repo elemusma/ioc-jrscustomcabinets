@@ -16,7 +16,10 @@ section.hero {
     the_post_thumbnail('full',array('class'=>'bg-img position-absolute w-100 h-100'));
 } else { 
 echo wp_get_attachment_image(26,'full','',['class'=>'bg-img position-absolute w-100 h-100']); 
-} ?>
+} 
+echo '<div class="position-absolute w-100 h-100 bg-black" style="opacity:.5;mix-blend-mode:multiply;top:0;left:0;"></div>';
+echo '<div class="pt-5 pb-5"></div>';
+?>
     <div class="container pb-4">
         <div class="row justify-content-center">
             <div class="col-md-9 pt-5 pb-5 p-4">
