@@ -1,6 +1,6 @@
 <?php
 // wp_enqueue_style('services', get_theme_file_uri('/css/sections/services.css'));
-$relationship = get_field('pages');
+$relationship = get_field('pages',2);
 
 if( $relationship ):
     echo '<section class="pt-5 position-relative bg-accent-quaternary" style="">';
@@ -15,9 +15,9 @@ if( $relationship ):
         foreach( $relationship as $post ): 
             // Setup this post for WP functions (variable must be named $post).
             setup_postdata($post);
-            echo '<a href="' . get_the_permalink() . '" class="col-lg col-md-6 text-center pl-1 pr-1 pt-2 col-services">';
+            echo '<a href="' . get_the_permalink() . '" class="col-lg-4 col-md-6 text-center pl-1 pr-1 pt-2 col-services">';
             // echo '<span class="col-lg col-md-6 text-center pl-1 pr-1 pt-2 col-services" style="">';
-            echo '<div class="position-relative overflow-h h-100 d-flex align-items-center justify-content-center" style="padding-top:75px;padding-bottom:75px;">';
+            echo '<div class="position-relative overflow-h h-100 d-flex align-items-center justify-content-center" style="padding-top:150px;padding-bottom:150px;">';
             echo '<div>';
             the_post_thumbnail('full',array('class'=>'w-100 h-100 position-absolute','style'=>'top:0;left:0;object-fit:cover;'));
             echo '<div class="position-absolute w-100 h-100 bg-black col-services-overlay" style="top:0;left:0;opacity:.45;"></div>';

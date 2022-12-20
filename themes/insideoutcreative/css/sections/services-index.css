@@ -1,6 +1,14 @@
 @media only screen and (min-width:992px) {
-    .col-services {
+
+    /* .col-services {
         flex-basis: 20%;
+    } */
+    .col-services:nth-child(8),
+    .col-services:nth-child(9),
+    .col-services:nth-child(10),
+    .col-services:nth-child(11) {
+        flex: 0 0 25%;
+        max-width: 25%;
     }
 }
 
