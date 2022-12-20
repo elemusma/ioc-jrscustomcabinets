@@ -1,26 +1,26 @@
 /* start of general */
 .full-height:nth-child(odd) {
     background: rgb(31, 61, 124);
-    background: linear-gradient(0deg,
-            rgba(31, 61, 124, 1) 0%,
-            rgba(122, 155, 73, 1) 100%);
     /* background: linear-gradient(0deg,
+            rgba(31, 61, 124, 1) 0%,
+            rgba(122, 155, 73, 1) 100%); */
+    background: linear-gradient(0deg,
             rgba(232, 225, 220, 1) 0%,
             rgba(220, 160, 56, 1) 100%);
-    background: linear-gradient(0deg,
+    /* background: linear-gradient(0deg,
             rgba(88, 125, 113, 1) 0%,
             rgba(53, 167, 255, 1) 100%); */
 }
 
 .full-height:nth-child(even) {
     background: rgb(31, 61, 124);
-    background: linear-gradient(180deg,
-            rgba(31, 61, 124, 1) 0%,
-            rgba(122, 155, 73, 1) 100%);
     /* background: linear-gradient(180deg,
+            rgba(31, 61, 124, 1) 0%,
+            rgba(122, 155, 73, 1) 100%); */
+    background: linear-gradient(180deg,
             rgba(232, 225, 220, 1) 0%,
             rgba(220, 160, 56, 1) 100%);
-    background: linear-gradient(180deg,
+    /* background: linear-gradient(180deg,
             rgba(88, 125, 113, 1) 0%,
             rgba(53, 167, 255, 1) 100%); */
 }
