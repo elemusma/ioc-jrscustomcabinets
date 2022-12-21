@@ -1,6 +1,7 @@
 <?php
 // wp_enqueue_style('services', get_theme_file_uri('/css/sections/services.css'));
-$relationship = get_field('pages',2);
+if(have_rows('services_content',2)): while(have_rows('services_content',2)): the_row();
+$relationship = get_sub_field('relationship');
 
 if( $relationship ):
     echo '<section class="pt-5 position-relative bg-accent-quaternary" style="">';
@@ -8,7 +9,7 @@ if( $relationship ):
     echo '<div class="row justify-content-center">';
 
     echo '<div class="col-12 text-center pb-4">';
-    echo '<h2 class="text-accent">SERVICES</h2>';
+echo get_sub_field('content');
     echo '</div>';
 
 
@@ -40,4 +41,6 @@ if( $relationship ):
     // Reset the global post object so that the rest of the page works correctly.
     wp_reset_postdata(); 
 endif;
+
+endwhile; endif;
 ?>
