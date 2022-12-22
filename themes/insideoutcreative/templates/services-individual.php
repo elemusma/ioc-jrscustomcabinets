@@ -78,7 +78,7 @@ echo '<section class="pt-5 pb-5">';
                     $subGalleryCounter++;
                     // echo '<div class="col-lg-3 col-md-4 col-6 col col-portfolio mt-3 mb-3 overflow-h">';
                     echo '<div class="position-relative img-hover overflow-h">';
-                    echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set-' . $mainGalleriesCounter . '" data-title="' . $image['title'] . '">';
+                    echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set-' . $mainGalleriesCounter . '">';
                     echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100','style'=>'height:350px;object-fit:cover;'] );
                     echo '</a>';
                     echo '</div>';
