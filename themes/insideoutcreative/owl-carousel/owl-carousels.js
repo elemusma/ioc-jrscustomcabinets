@@ -91,7 +91,7 @@ $('.gallery-carousel').owlCarousel({
     autoplayHoverPause: false,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
-    navText: ["<img src='/wp-content/uploads/2022/06/Arrow-Left-Circle-Blue.png' />", "<img src='/wp-content/uploads/2022/06/Arrow-Right-Circle-Blue.png' />"],
+    navText: ["<img src='https://insideoutcreative.io/wp-content/uploads/2022/12/Arrow-Left-Circle-Blue.png' />", "<img src='https://insideoutcreative.io/wp-content/uploads/2022/12/Arrow-Right-Circle-Blue.png' />"],
     responsive: {
         0: {
             items: 2

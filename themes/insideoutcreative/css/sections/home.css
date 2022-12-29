@@ -70,6 +70,11 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .col-full-background {
+        min-height: 45vh !important;
+        padding-top: 90px !important;
+    }
 }
 
 /* end of bars mobile */

@@ -35,7 +35,7 @@ echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 nav-logo','s
 }
 $logoSecondary = get_field('logo_secondary','options'); 
 if($logoSecondary){
-echo wp_get_attachment_image($logoSecondary['id'],'full',"",['class'=>'position-absolute w-auto nav-logo-secondary','style'=>'max-width:350px;top:0;left:15px;height:62px;object-fit:contain;transition:all 2s ease-in-out;']);
+echo wp_get_attachment_image($logoSecondary['id'],'full',"",['class'=>'position-absolute w-auto nav-logo-secondary','style'=>'max-width:100%;top:0;left:15px;height:62px;object-fit:contain;transition:all 2s ease-in-out;']);
 }
 ?>
 </a>

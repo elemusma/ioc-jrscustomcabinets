@@ -48,7 +48,7 @@ $link_title = $link['title'];
 $link_target = $link['target'] ? $link['target'] : '_self';
 
 
-echo '<div class="col-lg col-md-6 text-center w-100 overflow-h position-relative z-2 col-full-background d-flex align-items-end justify-content-center" style="padding-top:400px;padding-bottom:0px;min-height:94vh;" id="col-' . $ID . '">';
+echo '<div class="col-lg col-12 text-center w-100 overflow-h position-relative z-2 col-full-background d-flex align-items-end justify-content-center" style="padding-top:400px;padding-bottom:0px;min-height:94vh;" id="col-' . $ID . '">';
 
 if($barsCounter == 1){
 

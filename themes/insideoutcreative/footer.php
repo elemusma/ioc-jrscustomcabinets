@@ -18,7 +18,7 @@ $galleryFooter = get_field('footer_gallery','options');
 
 ?>
 <div class="row justify-content-center">
-<div class="col-md-5 text-center pb-5">
+<div class="col-md-5 col-9 text-center pb-5">
     <?php 
 $logo = get_field('logo','options'); $logoFooter = get_field('logo_footer','options'); 
 echo '<a href="' . home_url() . '">';
@@ -46,7 +46,7 @@ echo '</div>';
 echo get_template_part('partials/si');
 ?>
             </div>
-            <div class="col-md-3 text-md-right text-center">
+            <div class="col-md-3 pt-md-0 pt-4 text-md-right text-center">
             <!-- <a href="https://insideoutcreative.io/" target="_blank" rel="noopener noreferrer" style="" class="">
                 <img src="https://insideoutcreative.io/wp-content/uploads/2022/04/created-by-inside-out-creative.png" alt="" class="h-auto ml-2" style="width:215px;">
             </a> -->
