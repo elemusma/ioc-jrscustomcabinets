@@ -122,7 +122,7 @@ $galleryFooter = get_field('footer_gallery','options');
 
 </header>
 <?php
-echo '<section class="hero position-relative">';
+echo '<section class="hero position-relative" style="">';
 $globalPlaceholderImg = get_field('global_placeholder_image','options');
 
 if(!is_front_page()):
@@ -150,7 +150,7 @@ foreach( $gallery as $image ):
 // echo '<div class="col-lg-3 col-md-4 col-6 col col-portfolio mt-3 mb-3 overflow-h">';
 // echo '<div class="position-relative">';
 // echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set">';
-echo '<div>';
+echo '<div class="h-100">';
 echo wp_get_attachment_image($image['id'], 'full','',['class'=>'w-100 h-100 img-portfolio','style'=>'object-fit:cover;'] );
 echo '</div>';
 // echo '</a>';
@@ -161,14 +161,14 @@ echo '</div>';
 endif;
 endwhile; endif;
 
-echo '<div class="position-relative text-center d-flex justify-content-center align-items-end z-1" style="height:97vh;">';
+echo '<div class="position-relative text-center d-flex justify-content-center align-items-end z-1 home-hero-height" style="padding-top:80vh;">';
 echo '<div class="position-absolute w-100 h-100" style="background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,0) 75%, rgba(255,255,255,1) 95%);top:0;left:0;"></div>';
 
 echo '<div class="position-absolute w-100 h-100" style="background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,.75) 0%, rgba(255,255,255,0) 25%);top:0;left:0;"></div>';
 
-echo '<div class="position-relative" style="padding:500px 0 0;">';
+echo '<div class="position-relative" style="">';
 
 echo '<h1 class="text-white" style="font-size:100px;">' . get_the_title() . '</h1>';
 echo '</div>';

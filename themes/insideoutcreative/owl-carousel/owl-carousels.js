@@ -31,7 +31,7 @@ $('.header-carousel').owlCarousel({
     nav: false,
     dots: false,
     // stagePadding:170,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3500,
     autoplayHoverPause: false,
     animateIn: 'fadeIn',

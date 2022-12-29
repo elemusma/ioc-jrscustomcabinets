@@ -5,6 +5,12 @@
     }
 }
 
+@media only screen and (max-width:991px) {
+    .home-hero-height {
+        padding-top: 30vh !important;
+    }
+}
+
 /* end of hero */
 
 /* start of bars */
