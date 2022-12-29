@@ -3,47 +3,57 @@
   bottom: 0;
   z-index: 1;
 }
+
 .blog-content p a {
   color: white;
 }
+
 /*  */
 .col-blog img.blog-img {
   height: 150px;
   object-fit: contain;
 }
+
 .blog-posts-meta a {
   font-family: unset;
 }
+
 /* comments */
 .comment-form-comment label {
   display: block;
 }
+
 textarea#comment {
   width: 100%;
 }
+
 input#submit,
 input#searchsubmit {
-  background: var(--primary);
+  background: var(--accent-primary);
   border: none;
   padding: 10px 30px;
   color: white;
   cursor: pointer;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  box-shadow: none !important;
 }
+
 input#searchsubmit:hover {
-  background: var(--secondary);
+  background: var(--accent-secondary);
 }
+
 /* pagination */
 span.page-numbers.current {
   background: white;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--accent-primary);
   padding: 10px 20px;
-  color: var(--primary);
+  color: var(--accent-primary);
 }
+
 a.page-numbers {
-  background: var(--primary);
-  border: 2px solid var(--primary);
+  background: var(--accent-primary);
+  border: 2px solid var(--accent-primary);
   padding: 10px 20px;
   color: white;
   margin: 0 0 10px !important;
