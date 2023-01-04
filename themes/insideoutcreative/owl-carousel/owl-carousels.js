@@ -86,7 +86,7 @@ $('.gallery-carousel').owlCarousel({
     nav: true,
     dots: false,
     // stagePadding:170,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2500,
     autoplayHoverPause: false,
     animateIn: 'fadeIn',
